@@ -1,0 +1,70 @@
+<!--pages/register/register.wxml-->
+
+<mp-form-page title="注册界面" >
+  <form bindsubmit="regist">
+    <view class="page-section">
+      <view class="weui-cells__title">用户名</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input  name="username" class="weui-input" type="text" placeholder="请输入用户名" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">真实姓名</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input  name="realname" class="weui-input" type="text" placeholder="请输入真实姓名" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">邮箱</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input  name="email" class="weui-input" type="text" placeholder="请输入邮箱地址" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">电话</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input  name="phonenumber" class="weui-input" type="number" placeholder="请输入电话号码" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">密码</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input  name="pwd" class="weui-input" password type="text" placeholder="请输入密码" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="weui-cells__title">身份</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <radio-group name="user_group" bindchange="choseuser" >
+          <label><radio value="employee"/>个人</label>
+          <label><radio value="company"/>企业</label>
+        </radio-group>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section" wx:if="{{user==='company'}}">
+      <view class="weui-cells__title">企业</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input  name="companyname" class="weui-input" type="text" placeholder="请输入企业名称" />
+        </view>
+      </view>
+    </view>
+
+
+  <button type="primary" form-type="submit">注册</button>
+  </form>
+</mp-form-page>

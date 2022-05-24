@@ -1,0 +1,4 @@
+<!--pages/company/company.wxml-->
+<text>企业版主页\n</text>
+<text>当前企业：{{companyname}}</text>
+<button type="primary" plain="true" bindtap="gotojob_publish">职位发布</button>

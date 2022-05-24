@@ -1,0 +1,3 @@
+<!--pages/employee/employee.wxml-->
+<text>个人版主页</text>
+<button type="primary" plain="true" bindtap="gotojob_serch">职位搜索</button>

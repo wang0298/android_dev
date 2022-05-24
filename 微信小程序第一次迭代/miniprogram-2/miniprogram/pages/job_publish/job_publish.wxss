@@ -1,0 +1,4 @@
+/* pages/job_publish/job_publish.wxss */
+.c1{
+  margin-left: 15px;
+}

@@ -1,0 +1,13 @@
+<view>index</view>
+<button type="primary" bindtap="getdata">get test01</button>
+<button type="primary" bindtap="insertdata">insert</button>
+<view wx:for="{{test01data}}" wx:key="index">{{item.author}}</view>
+<form bindsubmit="forminsert">
+<input name="title" placeholder="input title"/>
+<input name="author" placeholder="input author"/>
+<button type="primary" form-type="submit">input button</button>
+</form>
+<view class="c1" wx:for="{{datalist}}" wx:key="index">
+  <view>{{item.title}}</view>
+  <view>{{item.author}}</view>
+</view>
