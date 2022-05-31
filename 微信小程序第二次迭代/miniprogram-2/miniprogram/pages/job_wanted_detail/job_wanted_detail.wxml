@@ -1,0 +1,42 @@
+
+<view  style="height: 225rpx; width: 750rpx; display: block; box-sizing: border-box; text-align: center; line-height: 130rpx; font-weight: 800; font-size: large">
+  求职信息详情界面
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box">
+  <view class="c2" style="background-color: #F1F1F1; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">职位:</view>
+  <view class="c2" style="background-color: #E6E6E6; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box">{{job_data.position}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box">
+  <view class="c2" style="background-color: #F1F1F1; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">行业:</view>
+  <view class="c2" style="background-color: #E6E6E6; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box">{{job_data.trade}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box">
+  <view class="c2" style="background-color: #F1F1F1; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">学历:</view>
+  <view class="c2" style="background-color: #E6E6E6; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box">{{job_data.education}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box">
+  <view class="c2" style="background-color: #F1F1F1; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">地点:</view>
+  <view class="c2" style="background-color: #E6E6E6; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box">{{job_data.location}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box">
+  <view class="c2" style="background-color: #F1F1F1; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">预计薪资:</view>
+  <view class="c2" style="background-color: #E6E6E6; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box">{{job_data.salary}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box">
+  <view class="c2" style="background-color: #F1F1F1; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">个人介绍:</view>
+  <view class="c2" style="background-color: #F1F1F1; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box"></view>
+</view>
+<view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text>{{job_data.require}}</text>
+</view>
+
+            
+
+
+

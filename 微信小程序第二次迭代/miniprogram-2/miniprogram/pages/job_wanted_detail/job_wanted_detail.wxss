@@ -1,0 +1,28 @@
+
+page {
+  background-color: var(--weui-BG-1);
+  height: 100%;
+  /* font-size: 16px; */
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--weui-FG-0);
+  justify-content: center;
+}
+
+.c2{
+  line-height: 120rpx;
+  text-align: center;
+  background-color: #fff;
+  border-top: 5.5rpx solid var(--weui-BG-1);
+}
+
+.text-box{
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+  display: flex;
+  min-height: 150px;
+  background-color: #E6E6E6;
+  font-size: 15px;
+  color: #353535;
+  line-height: 2em;
+}

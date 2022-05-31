@@ -1,0 +1,29 @@
+{
+  "pages": [  
+    "pages/login/login",
+    "pages/job_wanted/job_wanted",
+    "pages/job_serch/job_serch",
+    "pages/job_wanted_serch/job_wanted_serch",
+    "pages/job_publish/job_publish",
+    "pages/index/index" ,
+    "pages/register/register", 
+    "pages/employee/employee",
+    "pages/company/company",
+    "pages/job_detail/job_detail",
+    "pages/job_wanted_detail/job_wanted_detail",
+    "pages/testpage/testpage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "招聘信息发布与查询工具 v1",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+
+  "useExtendedLib": {
+    "weui": true
+  }
+}
