@@ -1,0 +1,20 @@
+<view  style="height: 130rpx; width: 750rpx; display: block; box-sizing: border-box; text-align: center; line-height: 130rpx; font-weight: 800; font-size: large">
+  招聘信息管理
+</view>
+
+<view style="display: flex; flex-direction: row; height: 82rpx; width: 750rpx; box-sizing: border-box">
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">职位</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">地点</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">薪资</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2"></view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box" wx:for="{{job_list}}" wx:key="index" >
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.position}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.location}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.salary}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3">
+    <text>查看详情</text>
+    </view>
+</view>
+

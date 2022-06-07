@@ -1,0 +1,47 @@
+<view  style="height: 130rpx; width: 750rpx; display: block; box-sizing: border-box; text-align: center; line-height: 130rpx; font-weight: 800; font-size: large">
+  信息发布与查询界面
+</view>
+<form bindsubmit="fabu">
+<view class="kind-list-item">
+<view style="display: flex; flex-direction: row; height: 104rpx; padding: 10px; margin: 10px; width: 710rpx; box-sizing: border-box">
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">种类:</view>
+  <view style=" flex: 1;">
+    <input  name="kind" class="weui-input" type="text" placeholder="请输入种类" />
+  </view>
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">地点:</view>
+  <view style=" flex: 1;">
+    <input  name="location" class="weui-input" type="text" placeholder="请输入地点" />
+  </view>
+</view>
+</view>
+
+<view class="kind-list-item">
+<view style="display: flex; flex-direction: row; height: 104rpx; padding: 10px; margin: 10px; width: 710rpx; box-sizing: border-box">
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">名称:</view>
+  <view  style="flex: 1;">
+    <input  name="name" class="weui-input" type="text" placeholder="请输入名称" />
+  </view>
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">时间:</view>
+  <view style=" flex: 1;">
+    <input  name="time" class="weui-input" type="text" placeholder="请输入时间" />
+  </view>
+</view>
+</view>
+<button type="primary" form-type="submit" size="mini" style="position: relative; left: 116rpx; top: -4rpx; width: 222rpx; height: 64rpx; display: inline-block; box-sizing: border-box">发布</button>
+<button type="primary" plain="true" form-type="reset" size="mini" style="position: relative; left: 244rpx; top: -4rpx; width: 222rpx; height: 64rpx; display: inline-block; box-sizing: border-box">重置</button>
+</form>
+
+<view style="display: flex; flex-direction: row; height: 82rpx; width: 750rpx; box-sizing: border-box">
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">种类</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">名称</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">地点</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">时间</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box" wx:for="{{job_list}}" wx:key="index" >
+    <view style=" flex: 1; height: 135rpx" class="c3"  data-detail="{{item}}">{{item.kind}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3"  data-detail="{{item}}">{{item.name}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3"  data-detail="{{item}}">{{item.location}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3"  data-detail="{{item}}">{{item.time}}</view>
+</view>
+

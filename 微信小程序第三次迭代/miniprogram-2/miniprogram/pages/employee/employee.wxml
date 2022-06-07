@@ -1,0 +1,5 @@
+<!--pages/employee/employee.wxml-->
+<text>个人版主页</text>
+<text>当前用户：{{userid}}</text>
+<button type="primary" plain="true" bindtap="gotojob_serch">招聘信息搜索</button>
+<button type="primary" plain="true" bindtap="gotojob_wanted">求职信息发布</button>

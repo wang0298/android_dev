@@ -1,0 +1,6 @@
+<!--pages/company/company.wxml-->
+<text>企业版主页\n</text>
+<text>当前企业：{{companyname}}</text>
+<button type="primary" plain="true" bindtap="gotojob_wanted_serch">求职信息搜索</button>
+<button type="primary" plain="true" bindtap="gotojob_publish">招工需求发布</button>
+<button type="primary" plain="true" bindtap="gotojob_manage">招聘信息管理</button>
