@@ -1,0 +1,20 @@
+<view  style="height: 300rpx; width: 750rpx; display: block; box-sizing: border-box; text-align: center; line-height: 240rpx; font-weight: 800; font-size: large">
+  招工需求管理
+</view>
+
+<view style="display: flex; flex-direction: row; height: 82rpx; width: 750rpx; box-sizing: border-box">
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">职位</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">地点</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">薪资</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2"></view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2"></view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 110rpx; width: 750rpx; box-sizing: border-box;margin-bottom: 5rpx;" wx:for="{{job_list}}" wx:key="index" >
+    <view style=" flex: 1; height: 110rpx" class="c3" bindtap="gotoedit" data-detail="{{item}}">{{item.position}}</view>
+    <view style=" flex: 1; height: 110rpx" class="c3" bindtap="gotoedit" data-detail="{{item}}">{{item.location}}</view>
+    <view style=" flex: 1; height: 110rpx" class="c3" bindtap="gotoedit" data-detail="{{item}}">{{item.salary}}</view>
+    <view style=" flex: 1; height: 110rpx" class="cc" bindtap="gotodetail" data-detail="{{item}}">查看简历</view>
+    <view style=" flex: 1; height: 110rpx" class="cc" bindtap="deletejob" data-detail="{{item}}">删除职位</view>
+</view>
+

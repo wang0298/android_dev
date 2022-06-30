@@ -1,0 +1,29 @@
+<!--pages/login/login.wxml-->
+
+<mp-form-page title="登录界面" >
+  <form bindsubmit="log_in">
+    <view class="page-section">
+    <view class="weui-cells__title">用户名</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="username" class="weui-input" type="text" placeholder="请输入用户名" />
+      </view>
+    </view>
+  </view>
+    <view class="page-section">
+    <view class="weui-cells__title">密码</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input  name="pwd" class="weui-input" password type="text" placeholder="请输入密码" />
+      </view>
+    </view>
+  </view>
+  <button type="primary" form-type="submit">登录</button>
+  <button type="primary" plain="true" bindtap="gotoregister">注册</button>
+  </form>
+</mp-form-page>
+
+
+
+<!-- <button type="primary" plain="true" bindtap="gotojob_serch">职位搜索</button>
+<button type="primary" plain="true" bindtap="gotojob_publish">职位发布</button> -->

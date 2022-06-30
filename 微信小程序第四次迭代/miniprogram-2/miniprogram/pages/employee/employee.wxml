@@ -1,0 +1,19 @@
+<!--pages/employee/employee.wxml-->
+<!-- <text>个人版主页</text>
+<text>当前用户：{{userid}}</text> -->
+
+<view  style="height: 904rpx; width: 750rpx; display: block; box-sizing: border-box; text-align: center; line-height: 480rpx; font-weight: 600; font-size: x-large">
+  个人版主页
+</view>
+<view class="cc" style="width: 730rpx; height: 160rpx; display: block; box-sizing: border-box; margin-top: 10rpx; margin-left: 10rpx; margin-right: 10rpx; line-height: 160rpx; text-align: center; font-weight: 500; font-size: large;" bindtap="gotojob_serch">招聘信息搜索</view>
+
+<view class="cc" style="width: 730rpx; height: 160rpx; display: block; box-sizing: border-box; margin-top: 10rpx; margin-left: 10rpx; margin-right: 10rpx; line-height: 160rpx; text-align: center; font-weight: 500; font-size: large;" bindtap="gotojob_wanted">求职信息发布</view>
+
+<view class="cc" style="width: 730rpx; height: 160rpx; display: block; box-sizing: border-box; margin-top: 10rpx; margin-left: 10rpx; margin-right: 10rpx; line-height: 160rpx; text-align: center; font-weight: 500; font-size: large;" bindtap="gotojob_wanted_manage">求职信息管理</view>
+
+
+
+
+
+<!-- <button type="primary" plain="true" bindtap="gotojob_serch">招聘信息搜索</button>
+<button type="primary" plain="true" bindtap="gotojob_wanted">求职信息发布</button> -->

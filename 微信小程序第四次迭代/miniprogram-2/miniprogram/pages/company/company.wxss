@@ -1,0 +1,16 @@
+
+page {
+  background-color: var(--weui-BG-1);
+  height: 100%;
+  /* font-size: 16px; */
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--weui-FG-0);
+  justify-content: center;
+}/* pages/company/company.wxss */
+
+.cc {
+  border: 3rpx solid rgb(247, 225, 225);
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(250, 245, 250),rgb(255, 255, 255)); 
+}

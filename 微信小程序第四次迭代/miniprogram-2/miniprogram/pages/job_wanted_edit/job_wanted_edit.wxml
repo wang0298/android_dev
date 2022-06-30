@@ -1,0 +1,63 @@
+
+<mp-form-page title="求职信息修改" >
+  <form bindsubmit="edit_job_wanted">    
+    <view class="page-section"> 
+      <view class="weui-cells__title">行业</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input value="{{job_data.trade}}" name="trade" class="weui-input" type="text" placeholder="请输入行业" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section"> 
+      <view class="weui-cells__title">岗位</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input value="{{job_data.position}}" name="position" class="weui-input" type="text" placeholder="请输入岗位" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section"> 
+      <view class="weui-cells__title">地点</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input value="{{job_data.location}}" name="location" class="weui-input" type="text" placeholder="请输入地点" />
+        </view>
+      </view>
+    </view>
+
+
+    <view class="page-section"> 
+      <view class="weui-cells__title">薪资</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input value="{{job_data.salary}}" name="salary" class="weui-input" type="digit" placeholder="请输入薪资" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section"> 
+      <view class="weui-cells__title">学历</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input value="{{job_data.education}}" name="education" class="weui-input" type="text" placeholder="请输入学历" />
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section"> 
+      <view class="weui-cells__title">个人介绍</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <textarea value="{{job_data.require}}" name="require" placeholder="请输入个人介绍" auto-focus />
+        </view>
+      </view>
+    </view>
+
+
+  <button type="primary" form-type="submit">提交修改</button>
+
+  </form>
+</mp-form-page>

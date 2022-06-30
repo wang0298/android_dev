@@ -1,0 +1,47 @@
+<view  style="height: 130rpx; width: 750rpx; display: block; box-sizing: border-box; text-align: center; line-height: 130rpx; font-weight: 800; font-size: large">
+  招聘信息搜索
+</view>
+<form bindsubmit="job_serch">
+<view class="kind-list-item">
+<view style="display: flex; flex-direction: row; height: 104rpx; padding: 10px; margin: 10px; width: 710rpx; box-sizing: border-box">
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">行业:</view>
+  <view style=" flex: 1;">
+    <input  name="trade" class="weui-input" type="text" placeholder="请输入行业" />
+  </view>
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">地点:</view>
+  <view style=" flex: 1;">
+    <input  name="location" class="weui-input" type="text" placeholder="请输入地点" />
+  </view>
+</view>
+</view>
+
+<view class="kind-list-item">
+<view style="display: flex; flex-direction: row; height: 104rpx; padding: 10px; margin: 10px; width: 710rpx; box-sizing: border-box">
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">职位:</view>
+  <view  style="flex: 1;">
+    <input  name="position" class="weui-input" type="text" placeholder="请输入职位" />
+  </view>
+  <view style=" width: 92rpx; height: 64rpx; display: block; box-sizing: border-box">薪资:</view>
+  <view style=" flex: 1;">
+    <input  name="salary" class="weui-input" type="text" placeholder="请输入最低薪资" />
+  </view>
+</view>
+</view>
+<button type="primary" form-type="submit" size="mini" style="position: relative; left: 116rpx; top: -4rpx; width: 222rpx; height: 64rpx; display: inline-block; box-sizing: border-box">搜索</button>
+<button type="primary" plain="true" form-type="reset" size="mini" style="position: relative; left: 244rpx; top: -4rpx; width: 222rpx; height: 64rpx; display: inline-block; box-sizing: border-box">重置</button>
+</form>
+
+<view style="display: flex; flex-direction: row; height: 82rpx; width: 750rpx; box-sizing: border-box">
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">职位</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">公司</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">地点</view>
+    <view style=" flex: 1; line-height: 82rpx;" class="c2">薪资</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 750rpx; box-sizing: border-box" wx:for="{{job_list}}" wx:key="index" >
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.position}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.company}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.location}}</view>
+    <view style=" flex: 1; height: 135rpx" class="c3" bindtap="gotodetail" data-detail="{{item}}">{{item.salary}}</view>
+</view>
+

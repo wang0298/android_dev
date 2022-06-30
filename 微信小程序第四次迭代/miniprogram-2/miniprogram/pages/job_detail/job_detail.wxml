@@ -1,0 +1,41 @@
+<!--pages/job_detail/job_detail.wxml982-->
+<view  style="height: 412rpx; width: 730rpx; display: block; box-sizing: border-box; text-align: center; line-height: 330rpx; font-weight: 800; font-size: large; margin-right: 10rpx; margin-left: 10rpx;">
+  工作详情
+</view>
+
+
+<view style="background-color: #FFFFFF; display: flex; flex-direction: row; height: 130rpx; width: 730rpx; box-sizing: border-box; margin-right: 10rpx; margin-left: 10rpx;">
+  <view class="c2" style="background-color: #FFFFFF; width: 450rpx; height: 114rpx; display: block; box-sizing: border-box ; margin-right: 100rpx;">{{job_data.position}}</view>
+  <view class="c2" style="background-color: #FFFFFF; width: 200rpx; height: 114rpx; display: block; box-sizing: border-box">￥{{job_data.salary}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 70rpx; width: 730rpx; box-sizing: border-box; margin-right: 10rpx; margin-left: 10rpx; margin-top: 10rpx;">
+  <view class="c3" style="background-color: #FFFFFF; width: 250rpx; height: 65rpx; display: block; box-sizing: border-box;">{{job_data.trade}}</view>
+  <view class="c3" style="background-color: #FFFFFF; width: 240rpx; height: 65rpx; display: block; box-sizing: border-box;margin-left: 5rpx; margin-right: 5rpx;">{{job_data.company}}</view>
+  <view class="c3" style="background-color: #FFFFFF; width: 250rpx; height: 65rpx; display: block; box-sizing: border-box">{{job_data.location}}</view>
+</view>
+
+<view style="display: flex; flex-direction: row; height: 130rpx; width: 730rpx; box-sizing: border-box; margin-right: 10rpx; margin-left: 10rpx; margin-top: 10rpx;">
+  <view class="c2" style="background-color: #FFFFFF; width: 230rpx; height: 130rpx; display: block; box-sizing: border-box">具体要求:</view>
+  <view class="c2" style="background-color: #FFFFFF; width: 520rpx; height: 130rpx; display: block; box-sizing: border-box"></view>
+</view>
+
+<view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}" style="width: 730rpx; height: 264rpx; display: flex; box-sizing: border-box; background-color: #FFFFFF; margin-right: 10rpx; margin-left: 10rpx; margin-top: 10rpx">
+        <text>{{job_data.require}}</text>
+</view>
+
+<!-- <view style="display: flex; flex-direction: row; height: 70rpx; width: 750rpx; box-sizing: border-box">
+  <view style="width: 374rpx; height: 100rpx; display: block; box-sizing: border-box">
+    <button type="primary" plain="true" bindtap="connect_company">联系公司</button>
+  </view>
+  <view style="width: 374rpx; height: 100rpx; display: block; box-sizing: border-box">
+    <button type="primary" plain="true" bindtap="cv_delivery">简历投递</button>
+  </view>
+</view> -->
+
+<view class="cc" style="width: 730rpx; height: 160rpx; display: block; box-sizing: border-box; margin-top: 10rpx; margin-left: 10rpx; margin-right: 10rpx; line-height: 160rpx; text-align: center; font-weight: 500; font-size: large;" bindtap="connect_company">联系公司</view>
+
+<view class="cc" style="width: 730rpx; height: 160rpx; display: block; box-sizing: border-box; margin-top: 10rpx; margin-left: 10rpx; margin-right: 10rpx; line-height: 160rpx; text-align: center; font-weight: 500; font-size: large;" bindtap="cv_delivery">简历投递</view>
+
+
+
